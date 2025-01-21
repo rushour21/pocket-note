@@ -1,0 +1,168 @@
+
+.container{
+    display: flex;
+    height: 100vh;
+}
+.left{
+    background-color: white;
+    width: 30vw;
+    height: 100vh;
+    position: relative;
+}
+.left h1{
+    color: black;
+    text-align: center;
+    margin-top: 7vh;
+}
+.noteList{
+    width: 25vw;
+    height: 78vh;
+    margin-left: auto;
+    margin-right: auto;
+}
+.left button{
+    position: absolute;
+    bottom: 5vh;
+    right: 1vw; 
+    width: 60px;
+    height: 60px;
+    display: grid;
+    place-items: center;
+    border-radius: 50%;
+    background-color: #16008B;
+    border: 0;
+}
+.left button img{
+    width: 32px;
+    height: 32px;
+
+}
+.right{
+    width: 70vw;
+    height: 100vh;
+    background-color: #DAE5F5;
+    display: block;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.right img{
+    width: 40vw;
+    height: 40vh;
+}
+.right p{
+    margin-top: 4vh;
+    font-size: 15px;
+}
+.modalContainer{
+    background: rgba(49,49,49,0.8);;
+    height: 100vh;
+    width: 100vw;
+    display: grid;
+    place-items: center;
+    position: absolute;
+    top: 0;
+}
+.popUp{
+    background-color: white;
+    border-radius: 6px;
+    width: 45vw;
+    height: 45vh;
+    font-size: 100%;
+    padding-left: 3%;
+    padding-top: 3%;
+}
+.popUp p{
+    margin-bottom: 25px;
+}
+.popUp input{
+    border: 2px solid #CCCCCC;
+    border-radius: 20px;
+    height: 5vh;
+    width: 22vw;
+    padding-left: 1.5vw;
+    margin-left: 20px;
+}
+.popUp1{
+    margin-top: 10px;
+    display: flex;
+}
+.popUp1 p{
+    padding-top: 15px;
+    margin-right: 20px;
+}
+.popUp1 button{
+    height: 25px;
+    width: 25px;
+    border-radius: 50%;
+    border: 0;
+    margin-left: 1vw;
+}
+.selector{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+.submit{
+    color: white;
+    background-color: #001F8B;
+    border: 0;
+    border-radius: 15px;
+    width: 10vw;
+    height: 5vh;
+    margin-top: 20px;
+    margin-left: 70%;
+}
+.noteList{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 10px;
+}
+.note{
+    width: 80%;
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+}
+.initials{
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    margin-left: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.groupName{
+    margin-left: 20px;
+}
+
+@media screen and (max-width: 600px) {
+    .container{
+        display: grid;
+    }
+    .left {
+        width: 100vw;
+    }
+    .noteList {
+        width: 80vw;
+    }
+    .right{
+        display: none;
+    }
+    .popUp{
+        width: 60%;
+        height: 30%;
+    }
+    .popUp input{
+        height: 2vh;
+        width: 17vh;
+        margin-left: 0;
+        font-size: x-small;
+    }
+    .submit{
+        margin-top: 0;
+    }
+}

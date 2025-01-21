@@ -1,0 +1,95 @@
+.noteContainer{
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    background-color: #DAE5F5;
+}
+.noteArea{
+    height: 63vh;
+    display:flex;
+    flex-direction: column;
+    overflow-y: scroll;
+    scrollbar-width: thin;
+}
+.header{
+    height:10vh; 
+    width:70vw; 
+    background-color: #001F8B;
+    display: flex;
+    align-items: center;
+    color: white;
+    
+}
+.titleInitials{
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    margin-left: 20px;
+    margin-right: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+}
+.titleName{
+    font-size: 20px;
+}
+.footer{
+    height:27vh; 
+    width:70vw; 
+    background-color: #001F8B;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    
+}
+.type{
+    height: 80%;
+    width: 95%;
+    border-radius:10px;
+    padding-left: 10px;
+    padding-top: 10px;
+    font-size: 20px;
+    border: none;
+    outline: none;
+}
+.vector{
+    width: 3%;
+    height: 15%;
+    position: absolute;
+    right: 3%;
+    bottom: 15%;
+}
+.noteItem{
+    width: 65vw;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    background-color: white;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 10px;
+    
+}
+.noteItem p{
+    /*overflow-wrap: break-word;*/  
+    word-wrap: break-word;
+}
+.timestamp{
+    margin-top: 10px;
+    text-align: right;
+}
+@media screen and (max-width: 600px) {
+    .header{
+        width: 100vw;
+    }
+    .footer{
+        width: 100vw;
+    }
+    .noteItem{
+        width: 90vw;
+    }
+    .header{
+        padding-left: 10px;
+    }
+}
