@@ -1,6 +1,8 @@
 # Pocket Note React 
 A simple and intuitive note-taking web application built using React. The app allows users to create groups, add notes to them, and manage the notes efficiently with local storage support.
 
+https://tourmaline-biscochitos-47a650.netlify.app/
+
 ## Features
 - Create and Manage Groups: Users can create and manage multiple note groups with different colors.
 - Add Notes to Groups: Each group can have multiple notes that users can write and store.
